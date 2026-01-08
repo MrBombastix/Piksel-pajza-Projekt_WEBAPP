@@ -1,0 +1,143 @@
+/* ======================
+   ARTICLE PAGE
+   ====================== */
+
+main.article-page {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #151631;
+    border: 4px solid var(--accent-blue);
+    box-shadow: 8px 8px 0 #000;
+}
+
+/* ======================
+   ARTICLE HEADER
+   ====================== */
+
+.article-header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: var(--accent-pink);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.article-header h3.banner-subtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: var(--accent-pink);
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.article-header time {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    margin-bottom: 2rem;
+}
+
+/* ======================
+   ARTICLE IMAGE
+   ====================== */
+
+.article-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-image img {
+    max-width: 256px;
+    width: 100%;
+    image-rendering: pixelated;
+    border: 3px solid var(--accent-yellow);
+    box-shadow: 6px 6px 0 #000;
+}
+
+/* ======================
+   ARTICLE CONTENT
+   ====================== */
+
+.article-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1.4rem;
+    color: var(--text-main);
+}
+
+/* ======================
+   BACK LINK
+   ====================== */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid var(--accent-yellow);
+    background-color: #1b1d3a;
+    color: var(--text-main);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.back-link:hover {
+    background-color: var(--accent-yellow);
+    color: #000;
+}
+/* ======================
+   ARTICLE FOOTER NAV
+   ====================== */
+
+.article-footer-nav {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* existing back-link ostaje isti */
+
+/* ======================
+   PREV / NEXT LINKS
+   ====================== */
+
+.article-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.article-nav a {
+    padding: 0.4rem 0.8rem;
+    border: 2px solid var(--accent-blue);
+    background-color: #1b1d3a;
+    color: var(--text-main);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.article-nav a:hover {
+    background-color: var(--accent-blue);
+    color: #000;
+}
+
+/* ======================
+   MOBILE TWEAK
+   ====================== */
+
+@media (max-width: 600px) {
+    .article-footer-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .article-nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
